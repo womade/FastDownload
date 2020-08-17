@@ -1,0 +1,196 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    /*加载背景图*/
+    background-image: none;
+    /* 背景图垂直、水平均居中 */
+    background-position: center center;
+    /* 背景图不平铺 */
+    background-repeat: no-repeat;
+    /* 当内容高度大于图片高度时，背景图像的位置相对于viewport固定 此条属性必须设置否则可能无效 */
+    background-attachment: fixed;
+    /* 让背景图基于容器大小伸缩 */
+    background-size: cover;
+    /* 设置背景颜色，背景图加载过程中会显示背景色 */
+    background-color: #252626;
+}
+
+html {
+    font-family: 'Noto Sans SC Sliced', PingFangSC-Light, Microsoft YaHei UI, Microsoft YaHei, helvetica, sans-serif;
+    font-weight: 300;
+    color: #000;
+}
+
+.search,
+.wd,
+.s {
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+a {
+    text-decoration: none;
+    color: #888;
+}
+
+#content {
+    width: 100%;
+    height: 100%;
+}
+
+.con {
+    width: 100%;
+    transition: 1s all;
+    margin: auto;
+    min-width: 320px;
+    height: 380px;
+    position: absolute;
+    left: 0;
+    top: -100px;
+    right: 0;
+    bottom: 0;
+}
+
+.con .shlogo {
+    position: relative;
+    width: 380px;
+    height: 200px;
+    margin: 20px auto;
+    background: url("./shlogo.gif") no-repeat center/cover;
+    /*background: none no-repeat center/cover;*/
+}
+
+.con .shlogo a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.sou {
+    max-width: 680px;
+    height: 50px;
+}
+
+.con .sou {
+    max-width: 680px;
+    position: relative;
+    width: calc(100% - 60px);
+    min-width: 320px;
+    margin: 0 auto;
+}
+
+.con .sou form {
+    width: 100%;
+    /*border: 1px solid #ddd;*/
+    height: 50px;
+    display: block;
+    margin: 10px auto 30px;
+    position: relative;
+}
+
+.sou form .se {
+    width: 40px;
+    height: 40px;
+    display: block;
+    position: absolute;
+    z-index: 10;
+    left: 6px;
+    top: 6px;
+    cursor: pointer;
+    font-size: 22px;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #777;
+}
+
+.sou form .se:hover {
+    opacity: 0.7;
+    filter:alpha(opacity=70); /* IE8 及其更早版本 */
+    -moz-opacity: 0.7;
+}
+
+.con .sou form .wd {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    line-height: 100%;
+    text-indent: 55px;
+    font-size: 18px;
+}
+
+.con .sou form .wd:focus {
+    background: #fff;
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+    border-color: #fff
+}
+
+.sou form .s {
+    width: 40px;
+    height: 40px;
+    display: block;
+    position: absolute;
+    z-index: 10;
+    right: 6px;
+    top: 6px;
+    cursor: pointer;
+    font-size: 22px;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #777;
+}
+
+.foot {
+    position: absolute;
+    bottom: 10px;
+    z-index: 1000;
+    text-align: center;
+    width: 100%;
+    color: #888;
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+}
+
+@media (max-height: 420px) {
+    .con {
+        margin: 0;
+        top: 0;
+    }
+
+    .con .sou form .wd {
+        text-indent: 50px;
+    }
+
+    .con .sou form:after {
+        content: "";
+        display: block;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    .home,
+    #menu,
+    .foot {
+        display: none;
+    }
+}

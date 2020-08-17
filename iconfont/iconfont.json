@@ -1,0 +1,16 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "14773878",
+      "name": "闪电排序",
+      "font_class": "shandianpaixu",
+      "unicode": "e746",
+      "unicode_decimal": 59206
+    }
+  ]
+}
