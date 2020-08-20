@@ -156,7 +156,7 @@ a {
 
 .foot {
     position: absolute;
-    bottom: 10px;
+    bottom: 5px;
     z-index: 1000;
     text-align: center;
     width: 100%;
@@ -186,10 +186,3 @@ a {
         border-radius: 50%;
         overflow: hidden;
     }
-
-    .home,
-    #menu,
-    .foot {
-        display: none;
-    }
-}
