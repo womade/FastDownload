@@ -157,7 +157,7 @@ a {
 .foot {
     position: absolute;
     bottom: 5px;
-    z-index: 1000;
+    z-index: 1;
     text-align: center;
     width: 100%;
     color: #888;
